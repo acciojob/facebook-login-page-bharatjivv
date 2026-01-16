@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <style>
-	body {
+body {
     font-family: Arial, sans-serif;
     margin: 0;
     background-color: #f0f2f5;
@@ -23,11 +23,11 @@
     padding: 20px;
 }
 
-.left-section {
+.left {
     flex: 1;
 }
 
-.left-section .logo {
+.left .logo {
     width: 200px;
 }
 
@@ -35,7 +35,7 @@
     width: 200px;
 }
 
-.left-section h1 {
+.left h1 {
     font-size: 28px;
     line-height: 1.4;
     margin-top: 20px;
@@ -115,13 +115,14 @@
     background-color: #36a420;
 }
 
+
 </style>
 <body>
     <div class="container">
         <!-- Left Section: Logo and Description -->
-        <div class="left-section">
+        <div class="left">
             <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"
-                alt="Facebook Logo" class="logo left img">
+                alt="Facebook Logo" class="logo">
             <h1>Facebook helps you connect and share with the people in your life.</h1>
         </div>
 
@@ -133,7 +134,7 @@
                 <button id="login-btn">Log In</button>
                 <a href="/recover/initiate" class="forgot">Forgotten account?</a>
                 <hr>
-                <button id="create-btn" class="signup"><a href="/main.html">Create New Account </a></button>
+                <button id="create-btn" class="signup"><a href="/reg/" id="create-btn" class="signup">Create New Account</a></button>
             </div>
         </div>
     </div>
