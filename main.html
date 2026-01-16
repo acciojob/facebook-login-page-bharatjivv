@@ -1,16 +1,137 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Login Page</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+<style>
 
+	body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f0f2f5;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 50px;
+    padding: 20px;
+}
+
+.left-section {
+    flex: 1;
+}
+
+.left-section .logo {
+    width: 200px;
+}
+
+.left-section h1 {
+    font-size: 28px;
+    line-height: 1.4;
+    margin-top: 20px;
+    color: #1c1e21;
+}
+
+.right-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.login-box {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    width: 350px;
+    text-align: center;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+}
+
+.login-box button {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    font-size: 16px;
+    border-radius: 6px;
+    border: none;
+    background-color: #1877f2;
+    color: white;
+    cursor: pointer;
+}
+
+.login-box button:hover {
+    background-color: #165ec9;
+}
+
+.login-box .forgot {
+    display: block;
+    margin: 10px 0;
+    color: #1877f2;
+    text-decoration: none;
+}
+
+.login-box .forgot:hover {
+    text-decoration: underline;
+}
+
+.login-box hr {
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid #ddd;
+}
+
+#login-btn {
+    background-color: #1877f2;
+}
+
+#create-btn {
+    background-color: #42b72a;
+}
+
+#create-btn:hover {
+    background-color: #36a420;
+}
+
+</style>
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    <div class="container">
+        <!-- Left Section: Logo and Description -->
+        <div class="left-section">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"
+                alt="Facebook Logo" class="logo">
+            <h1>Facebook helps you connect and share with the people in your life.</h1>
+        </div>
 
+        <!-- Right Section: Login Form -->
+        <div class="right-section">
+            <div class="login-box">
+                <input type="text" placeholder="Email or phone number" id="email">
+                <input type="password" placeholder="Password" id="password">
+                <button id="login-btn">Log In</button>
+                <a href="#" class="forgot">Forgotten account?</a>
+                <hr>
+                <button id="create-btn">Create New Account</button>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="./script.js"></script>
 </body>
 
 </html>
