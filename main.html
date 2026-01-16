@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <style>
-
 	body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -29,6 +28,10 @@
 }
 
 .left-section .logo {
+    width: 200px;
+}
+
+.left img {
     width: 200px;
 }
 
@@ -104,6 +107,10 @@
     background-color: #42b72a;
 }
 
+.signup {
+    background-color: #42b72a;
+}
+
 #create-btn:hover {
     background-color: #36a420;
 }
@@ -121,12 +128,12 @@
         <!-- Right Section: Login Form -->
         <div class="right-section">
             <div class="login-box">
-                <input type="text" placeholder="Email or phone number" id="email">
+                <input type="text" placeholder="Email address or phone number" id="email">
                 <input type="password" placeholder="Password" id="password">
                 <button id="login-btn">Log In</button>
-                <a href="#" class="forgot">Forgotten account?</a>
+                <a href="/recover/initiate" class="forgot">Forgotten account?</a>
                 <hr>
-                <button id="create-btn">Create New Account</button>
+                <button id="create-btn" class="signup">Create New Account</button>
             </div>
         </div>
     </div>
